@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shopanel Profile Dashboard</title>
+</head>
+<body class="font-outfit">
+
+    <!-- NAVBAR -->
+    <nav class="h-16 py-1 px-4 bg-white shadow-md sticky top-0 left-0 z-50">
+        <div class="flex items-center h-full gap-12">
+            <i class='bx bx-menu text-2xl cursor-pointer toggle-sidebar'></i>
+            <a href="#" class="flex items-center gap-4">
+                <span class="w-12 aspect-square flex items-center justify-center text-white text-2xl bg-blue-600">
+                    <i class='bx bx-shopping-bag' ></i>
+                </span>
+                <span class="text-2xl font-semibold">Shopanel</span>
+            </a>
+            <form action="" class="flex-1 max-w-lg hidden md:block">
+                <input type="search" placeholder="Search..." class="w-full py-2 px-4 rounded bg-gray-100 border border-gray-200 outline-none focus:ring-4 focus:ring-blue-100 focus:border-blue-600">
+            </form>
+            <a href="#" class="ml-auto relative text-gray-500 hover:text-gray-800 hidden md:block">
+                <i class='bx bx-envelope text-2xl' ></i>
+                <span class="absolute -top-1 w-2 h-2 rounded-full bg-red-600 left-1/2 -translate-x-1/2"></span>
+            </a>
+            <a href="#" class="relative text-gray-500 hover:text-gray-800 ml-auto md:ml-0">
+                <i class='bx bx-bell text-2xl' ></i>
+                <span class="absolute -top-1 w-2 h-2 rounded-full bg-red-600 left-1/2 -translate-x-1/2"></span>
+            </a>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- SIDEBAR -->
+    <div class="fixed top-16 transition-all overflow-hidden left-0 w-64 bg-white border-r border-gray-200 bottom-0 sidebar-collapse z-40" id="sidebar">
+        <a href="#" class="p-4 flex items-center gap-4 hover:bg-blue-50">
+            <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="w-16 aspect-square object-cover rounded" alt="">
+            <div class="whitespace-nowrap sidebar-user-profile">
+                <h3 class="text-lg font-semibold mb-1">Fajar Std</h3>
+                <span class="py-1 px-2 rounded-full bg-blue-600 text-white text-sm font-medium">Level One</span>
+            </div>
+        </a>
+        <div class="py-4">
+            <span class="text-sm text-gray-500 uppercase ml-4 inline-block mb-2 sidebar-menu-title">Menu</span>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#" class="active">
+                        <i class='bx bxs-dashboard sidebar-menu-icon'></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user-circle sidebar-menu-icon' ></i>
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-sitemap sidebar-menu-icon' ></i>
+                        Products
+                    </a>
+                    <ul class="sidebar-dropdown hidden ml-4 border-l border-blue-600">
+                        <li>
+                            <a href="#">Electronics</a>
+                        </li>
+                        <li>
+                            <a href="#">Fashion</a>
+                        </li>
+                        <li>
+                            <a href="#">Foods</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-heart sidebar-menu-icon' ></i>
+                        Wishlist
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog sidebar-menu-icon' ></i>
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-question-mark sidebar-menu-icon' ></i>
+                        Help
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- SIDEBAR -->
+
+    <!-- MAIN -->
+    <div class="pl-0 md:pl-64 transition-all" id="main">
+        <div class="p-4">
+            <div class="relative">
+                <img src="img/bg.svg" class="w-full h-72 object-cover rounded-lg" alt="">
+                <a href="#" class="absolute top-4 left-4 w-8 h-8 rounded-full bg-white/50 hover:bg-white flex items-center justify-center">
+                    <i class='bx bx-edit-alt' ></i>
+                </a>
+            </div>
+            <div class="flex items-center gap-4 mt-4">
+                <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="w-28 h-28 object-cover rounded-full" alt="">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Fajar Std</h2>
+                    <span class="text-lg text-gray-500">fajar_</span>
+                </div>
+                <a href="#" class="py-2 px-4 rounded bg-blue-600 sm:flex items-center gap-2 text-white hover:bg-blue-700 ml-auto hidden">
+                    <i class='bx bx-edit-alt' ></i>
+                    Edit Profile
+                </a>
+            </div>
+            <p class="text-gray-500 text-lg mt-4 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vitae tempora culpa laborum inventore mollitia eius odit voluptatem perspiciatis magnam ratione sunt, facilis, possimus sed delectus. Tempore quaerat aspernatur, numquam deleniti omnis alias accusamus sit ea expedita natus ipsa, eos aperiam inventore totam? Maiores voluptate excepturi sunt quia quo officiis.</p>
+            <div>
+                <div class="flex items-center gap-8 tab-indicator border-b border-gray-200">
+                    <span data-toggle="tab" data-target="#security" class="active">Security</span>
+                    <span data-toggle="tab" data-target="#activities">My Activities</span>
+                    <span data-toggle="tab" data-target="#contact">Contact Info</span>
+                </div>
+                <div class="tab-content mt-4" id="security">
+                    <h2 class="text-2xl font-semibold">Security</h2>
+                </div>
+                <div class="tab-content mt-4 hidden" id="activities">
+                    <h2 class="text-2xl font-semibold">My Activities</h2>
+                </div>
+                <div class="tab-content mt-4 hidden" id="contact">
+                    <h2 class="text-2xl font-semibold">Contact Info</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN -->
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
